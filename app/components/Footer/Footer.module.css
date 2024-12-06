@@ -1,0 +1,268 @@
+/* Desktop Styles */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topSection {
+  display: flex;
+  gap: 174px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #fff;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.newsletterSection {
+  flex: 1;
+}
+
+.newsletter {
+  display: flex;
+  gap: 12px;
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  background: white;
+  font-size: 18px;
+}
+
+.subscribeBtn {
+  padding: 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  opacity: 0.5;
+  border-radius: 8px;
+}
+
+.contactSection .text {
+  margin-bottom: 16px;
+}
+
+.email {
+  margin-bottom: 24px;
+}
+
+.currencySelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.flagImage {
+  border-radius: 999px;
+}
+
+.currencyNote {
+  font-size: 12px;
+}
+
+.linksSection {
+  padding-top: 56px;
+  display: flex;
+  gap: 210px;
+}
+
+.linkColumn {
+  flex: 1;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+}
+
+.paymentSection {
+  margin-top: 56px;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 37px;
+  font-size: 14px;
+}
+
+.mobileView {
+  display: none;
+}
+
+.plus {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .desktopView,
+  .copyright {
+    display: none;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .mobileView {
+    display: block;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .mobileSection {
+    padding: 24px 0;
+  }
+
+  .mobileHeading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .mobileText {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+  }
+
+  .newsletter {
+    display: flex;
+    gap: 16px;
+  }
+
+  .newsletterInput {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .subscribeBtn {
+    padding: 12px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .contactText {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .divider {
+    height: 1px;
+    background-color: white;
+    width: 100%;
+  }
+
+  .accordionButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .chevron {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .accordionContent {
+    padding: 0 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mobileLink {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .mobileCopyright {
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .paymentIcons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  .topSection,
+  .linksSection {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,160 @@
+.filterSidebar {
+  width: 300px;
+  background: white;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow-y: auto;
+  opacity: 0;
+  width: 0;
+}
+
+.filterSidebar.open {
+  opacity: 1;
+  width: 300px;
+}
+
+.filterSection {
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filterCheckboxContainer {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.filterHeader h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  gap: 12px;
+}
+
+.filterOption {
+  font-size: 16px;
+  color: #252020;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.customCheckbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.checkboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkboxLabel {
+  padding-left: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.checkboxCustom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 1px solid #888792;
+  transition: all 0.2s ease;
+}
+
+.checkboxInput:checked + .checkboxLabel .checkboxCustom {
+  background-color: #252020;
+  border-color: #252020;
+}
+
+.checkboxCustom:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxInput:checked + .checkboxLabel .checkboxCustom:after {
+  display: block;
+}
+
+.checkboxInput:focus + .checkboxLabel .checkboxCustom {
+  box-shadow: 0 0 0 2px rgba(37, 32, 32, 0.1);
+}
+
+.checkboxLabel:hover .checkboxCustom {
+  border-color: #252020;
+}
+
+.unselectAll {
+  background: none;
+  border: none;
+  color: #bfc8cd;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 12px;
+  text-align: start;
+  margin-top: 24px;
+}
+
+.unselectAll:hover {
+  color: #252020;
+}
+
+.allOption {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .filterSidebar {
+    left: -100%;
+  }
+
+  .filterSidebar.open {
+    transform: translateX(100%);
+  }
+}

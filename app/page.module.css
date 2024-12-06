@@ -1,0 +1,138 @@
+.container {
+  max-width: 1428px;
+  margin: 0 auto;
+}
+
+.heroSection {
+  margin: 72px 0;
+  text-align: center;
+  color: #252020;
+  padding: 0 16px;
+}
+
+.heroTitle {
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.heroDescription {
+  max-width: 721px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 22px;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 24px 0;
+}
+
+.headerLeft {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.itemCount {
+  font-size: 18px;
+}
+
+.filterToggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #888792;
+  gap: 12px;
+}
+
+.filterText {
+  text-decoration: underline;
+}
+
+.productSection {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.productsGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 15px;
+}
+
+.loadingState,
+.errorState {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #888792;
+}
+
+.errorState {
+  color: #d32f2f;
+}
+
+.mobileFilterText {
+  font-size: 14px;
+  color: #252020;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    margin: 16px 0;
+  }
+
+  .headerLeft {
+    gap: 40px;
+  }
+
+  .heroTitle {
+    font-size: 24px;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  }
+
+  .productHeader {
+    padding: 1px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .headerLeft {
+    display: none;
+  }
+
+  .productSection {
+    gap: 0;
+  }
+  .mobileFilterText {
+    display: block;
+  }
+}
