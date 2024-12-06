@@ -33,7 +33,7 @@ export default function Header() {
           <div className={styles.leftSection}>
             <Menu className={styles.menu} />
             <img
-              src="assets/logo.png"
+              src="assets/Logo.png"
               alt="appscrip-logo"
               className={styles.logo}
             />
